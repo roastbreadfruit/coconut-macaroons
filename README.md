@@ -1,2 +1,2 @@
 # coconut-macaroons
-Smple recipe website for coconut macaroons.
+Simple recipe website for coconut macaroons.
