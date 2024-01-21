@@ -1,0 +1,488 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    
+    font-family: Nunito, helvetica, sans-serif;
+    box-sizing: border-box;
+
+}
+:root{
+    --normaltext: rgb(53, 26, 33);
+    --accent: rgb(218, 75, 30);
+    --pagebg: rgb(255, 240, 229);
+    --sidebarbg: rgb(53, 26, 33);
+}
+
+body{
+   background-color: var(--pagebg);
+   overflow: hidden;
+   height: 100vh;
+   width: 100%;
+}
+
+body main{
+    max-width: 85%;
+    overflow-y: auto;
+    overflow-x:hidden;
+    background-color: var(--pagebg);
+    height: 100%;
+    margin: 0;
+}
+ul{
+    margin:0;
+    padding:0;
+}
+ul li{
+    padding-left: 0;
+    margin-left: 0;
+}
+
+aside{
+    flex: 1, 0, 5%;
+    width: 250px;
+    max-width: 100%;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+h1, h2, h3, h4{
+    font-family: Nunito, Helvetica, sans-serif;
+    font-weight: 200px;
+}
+
+h2, h3, h4, h5{
+    color: rgb(53, 26, 33);
+}
+
+main h1{
+    font-size: 2.2em;
+    text-align: center;
+}
+
+main h2{
+    font-size: 1.8em;
+}
+main h4{
+    font-size: 1.3em;
+}
+
+p{
+    font-size: 1.05em;
+    font-family: Comfortaa, Nunito, Helvetica, sans-serif;
+    padding: 20px 7% 4px 7%;
+    line-height: 1.4;
+}
+
+
+hr{
+    margin-top: 20px;
+}
+
+.divider{
+    border: 0.5px solid var(--accent);
+}
+
+.footer{
+    font-size: 0.8em;
+    color: rgba(223, 223, 223, 0.58)
+}
+.footer-subtitle{
+    font-size: 10px;
+}
+/* VERTICAL SIDEBAR MENU */
+
+.vertical-sidebar{
+    /* overflow: hidden; */
+    align-items: center;
+    display: flex;
+    color: #efefef;
+    background-color: var(--sidebarbg);
+    flex-direction: column;
+    justify-content: space-between;
+    max-width:100%;
+    padding: 1.5%;
+}
+
+/* menu img */
+.vertical-sidebar img{
+    max-height: 120px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.vertical-sidebar nav{
+  top: 2.5%;
+  bottom: 0px;
+}
+
+.vertical-sidebar section{
+    position: sticky;
+    top: 2.5%;
+    bottom: 0px;
+  }
+
+.vertical-sidebar ul{
+    list-style-type: none;
+}
+
+.vertical-sidebar li{
+    padding: 20px 0 10px 0; 
+
+}
+
+/* Menu links A tags */
+
+.vertical-sidebar a{
+    color: #efefef;
+    text-decoration: none;  
+}
+/* hover */
+.vertical-sidebar a:hover{
+   text-decoration: underline;
+   color: white;
+}
+/* clicked */
+.vertical-sidebar a:active{
+    font-weight: bold;
+    color: #EBCEAC;
+ }
+ .vertical-sidebar a.current{
+    font-weight: bold;
+    color: #EBCEAC;
+ }
+
+ /* ------end of menu stuff----- */
+
+aside{
+    display: flex;
+
+}
+
+/*----------- SITE CONTENT! ----------*/
+
+.hero-diagram{
+    background-image: url(../images/hero.png);
+    background-size: cover;
+    width: 100%;
+    height: 630px;
+}
+
+#hero-text{
+    text-align: center;
+}
+main .site-content{
+    padding-top: 1.2%;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+ /* All H1s within the main tag (site content) 
+ have accent color */
+main h1{
+    margin: 0 3% 0 3%;
+    padding-top: 40px;
+    color: var(--accent);
+}
+
+/* section stuff */
+
+.section-container{
+    padding: 2% 1.5% 2% 1.5%;
+    margin: 0 3% 0 3%;
+}
+/* img list is the container for all 4 items */
+section .img-list{
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.image-container{
+    max-width: 100px;
+}
+
+.img-container img{
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.img-list article{
+    max-height: 400px;
+    max-width: 300px;
+    padding: 1.8% 1.2%;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#homepage-bottom-banner{
+    background-image:  url(../images/index-bottom-banner.jpg);
+    background-color: rgba(53, 26, 33, 0.38);
+    background-blend-mode: multiply;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+}
+
+.banner-items{
+    color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%; /* so the content spans full height*/
+}
+
+.banner-items h4{
+    color: white;
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+
+.button-container{
+    displaY: flex;
+
+}
+
+.btn-white-transparent{
+    border: 1px solid #efefef;
+    background-color: rgba(0, 0, 0, 0);
+    color: #efefef;
+    padding: 20px;
+    margin: 15px 10px;
+}
+
+.btn-white-transparent:hover{
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 80%);
+    color: var(--normaltext);
+    padding: 20px;
+    margin: 15px 10px;
+}
+.btn-white-transparent a:hover{
+    color: var(--normaltext)
+}
+
+/* -------INDIVIDUAL PAGES CSS-------- */
+
+/* history page */
+#history-hero{
+    background-image: url(../images/map.jpg);
+    background-size: cover;
+    background-color: rgba(53, 26, 33, 0.18);
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#history-hero h1{
+    font-size: 50px;
+    color: #efefef;
+    text-shadow: 2px 4px 8px rgba(31, 13, 13, 0.88);
+}
+#history-bottom-banner{
+    background-image:  url(../images/index-hero.jpg);
+    background-color: rgba(53, 26, 33, 0.38);
+    background-blend-mode: multiply;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+}
+#history-copy p{
+    line-height: 1.8;
+}
+
+/* ------INGREDIENTS PAGE-------- */
+
+.content-box{
+    padding: 0;
+    margin: auto;
+}
+
+#ingredients-hero{
+    background-image: url(../images/menu-img.jpg);
+    background-size: cover;
+    background-position-x: left;
+    background-color: rgba(53, 26, 33, 0.18);
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ingredients-hero h1{
+    font-size: 50px;
+    color: #efefef;
+    text-shadow: 2px 4px 8px rgba(31, 13, 13, 0.48);
+}
+
+.ingredients-container{
+    display: flex;
+    overflow: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px 70px 30px 70px;
+    border: 4px dotted rgba(218, 75, 30, 0.5);
+}
+
+.ingredients-group{
+    display: flex;
+    overflow: auto;
+    width: 900px;
+}
+
+.image-container{
+    max-width: 30px;
+}
+
+.ingr-container img{
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.ingredient-item{
+    padding: 4% 1.2%;
+}
+
+.section-container h4{
+    text-align: center;
+    font-weight: 600;
+    padding: 2px;
+}
+
+.section-container h5{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-weight: 150;
+    padding-top: 8px;
+}
+
+.ingredients-list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    height: 100px;
+    gap: 10px 15px;
+}
+.ingredients-ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    height: 40px;
+    padding: 40% 1.4%;
+}
+
+#ingredients-ul p{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    height: 1000px;
+    width:800px;
+    gap: 10px;
+}
+#sources a{
+        color:rgb(218, 75, 30);
+        text-decoration: underline;
+}
+#sources a:hover{
+    color: rgba(218, 75, 30, 0.7);
+    text-decoration: none;
+}
+
+path{
+    fill:rgb(218, 75, 30);
+}
+
+path:hover{
+    fill:rgb(53, 26, 33);
+}
+/* --------- RECIPE PAGE------------ */
+
+#recipe-page-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    max-height: 100%;
+}
+
+#recipe-page-wrapper h1{
+    padding-top: 20px;
+}
+
+#recipe-hero{
+    background-image: url(../images/recipe-img.jpg);
+    background-size: cover;
+    background-position-x: left;
+    background-color: rgba(79, 30, 30, 0.33);
+    background-blend-mode: multiply;
+    width: 800px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#recipe-hero h1{
+        font-size: 50px;
+        color: #efefef;
+        text-shadow: 2px 4px 8px rgba(31, 13, 13, 0.48);
+}
+
+#steps{
+    font-size:60px;
+}
+#steps-subtitle{
+    color: rgba(218, 75, 30, 0.6);
+    font-size: 28px;
+    font-weight: 600;
+}
+
+#recipe-list{
+    padding: 10%;
+}
+
+#recipe-list ol{
+    line-height: 2.5em;
+}
+
+#macaroons-largetxt{
+    position: absolute;
+    top: 0;
+    right:0;
+}
+
+#macaroons-largetxt h1{
+    font-size: 70px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    margin:0;
+    padding:0;
+    text-transform: uppercase;
+    color:rgba(218, 75, 30, 0.5);
+    mix-blend-mode: multiply;
+
+}
